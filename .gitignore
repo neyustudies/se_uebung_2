@@ -91,3 +91,4 @@ public/fonts/
 .vscode/*
 *.code-workspace
 *.plist
+/bin/

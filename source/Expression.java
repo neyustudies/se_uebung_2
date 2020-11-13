@@ -3,11 +3,11 @@ import java.util.Map;
 public interface Expression {
 	
 	
-	public int evaluate(Map<String, Integer> m);
+	public int evaluate(Map<String, Integer> m); //weist variablen einen exakten Wert zu und rechnet die Expression aus
 	
 	public String toString();
 	
-	public void rank();
+	public int rank();
 	
 	
 }
