@@ -1,8 +1,8 @@
 
 public class Division extends Binary{
 	
-	public int evaluate(Map<String, Integer> m) {
-		
+	public int calculate(int first, int second) {
+		return first / second;
 	}
 	
 	public int rank() {
