@@ -3,6 +3,11 @@ import java.util.Map;
 public abstract class Binary implements Expression{ 
 	public Expression a; //Interfaces können scheinbar doch Attribute sein??
 	public Expression b;
+
+	public Binary(Expression first, Expression second) {
+		this.a = first;
+		this.b = second;
+	};
 	
 	
 	public abstract int calculate(int first, int second); //Overridden by base classes

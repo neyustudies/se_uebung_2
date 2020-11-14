@@ -87,7 +87,8 @@ secretnotes.md
 imports/lib/
 public/fonts/
 .history/
-
+.project
+.classpath
 .vscode/*
 *.code-workspace
 *.plist
