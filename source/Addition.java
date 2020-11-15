@@ -1,3 +1,4 @@
+package t;
 
 public class Addition extends Binary{
 	
@@ -15,5 +16,8 @@ public class Addition extends Binary{
 	public int rank() {
 		return 2;
 	}
-
+	@Override
+	public String toString () {
+		return ("+");
+	}
 }

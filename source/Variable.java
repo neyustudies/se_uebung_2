@@ -1,3 +1,5 @@
+package t;
+
 import java.util.Map;
 
 public class Variable extends Unary {
@@ -16,6 +18,10 @@ public class Variable extends Unary {
 	
 	public int rank() {
 		return 0;
+	}
+	@Override
+	public String toString() {
+		return (name);
 	}
 
 

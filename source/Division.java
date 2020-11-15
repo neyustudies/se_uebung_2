@@ -1,3 +1,4 @@
+package t;
 
 public class Division extends Binary{
 	
@@ -12,6 +13,10 @@ public class Division extends Binary{
 	
 	public int rank() {
 		return 1;
+	}
+	@Override
+	public String toString () {
+		return ("/");
 	}
 
 

@@ -1,3 +1,5 @@
+package t;
+
 import java.util.Map;
 
 public abstract class Binary implements Expression{ 
@@ -38,9 +40,9 @@ public abstract class Binary implements Expression{
 		return this.calculate(first, second);
 	}
 	
-	
+	@Override
 	public String toString() {
-		return null; // TODO	
+		return (this.a.toString() + this.b.toString()); // TODO	
 	}
 		
 	

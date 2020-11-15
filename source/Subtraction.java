@@ -1,21 +1,21 @@
 package t;
 
-public class Multiplication extends Binary{
+public class Subtraction extends Binary{
 
-	public Multiplication(Expression first, Expression second) {
+	public Subtraction(Expression first, Expression second) {
 		super(first, second);
 	}
 
 	public int calculate(int first, int second) {
-		return first * second;
+		return first - second;
 	}
 	
 	public int rank() {
-		return 1;
+		return 2;
 	}
 	@Override
 	public String toString () {
-		return ("*");
+		return ("-");
 	}
 
 }

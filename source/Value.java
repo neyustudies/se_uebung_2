@@ -1,3 +1,5 @@
+package t;
+
 import java.util.Map;
 
 public class Value extends Unary {
@@ -15,9 +17,9 @@ public class Value extends Unary {
 	public int rank() {
 		return 0;
 	}
-	
-	public String toString() { // Der Rückgabetyp ist inkompatibel mit Expression.toString()
-		return Integer.toString(v);
+	@Override
+	public String toString() { 
+		return (Integer.toString(v));
 	}
 
 
