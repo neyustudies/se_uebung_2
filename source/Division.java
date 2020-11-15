@@ -7,6 +7,7 @@ public class Division extends Binary{
 		super(first, second);
 	}
 
+	@Override //abstract method
 	public int calculate(int first, int second) {
 		return first / second;
 	}
@@ -14,8 +15,9 @@ public class Division extends Binary{
 	public int rank() {
 		return 1;
 	}
-	@Override
-	public String toString () {
+	
+	@Override //abstract method
+	public String getOperator () {
 		return ("/");
 	}
 

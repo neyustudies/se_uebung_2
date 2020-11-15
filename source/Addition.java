@@ -1,6 +1,6 @@
 package t;
 
-public class Addition extends Binary{
+public class Addition extends Binary implements Associative {
 	
 	/* Die Rückgabetypen sind inkompatibel zu den geerbten Methoden 
 	 * Expression.toString(), Object.toString()*/
@@ -8,7 +8,8 @@ public class Addition extends Binary{
 	public Addition(Expression first, Expression second) {
 		super(first, second);
 	}
-
+	
+	@Override //abstract method
 	public int calculate(int first, int second) {
 		return first + second;
 	}
@@ -16,8 +17,9 @@ public class Addition extends Binary{
 	public int rank() {
 		return 2;
 	}
-	@Override
-	public String toString () {
+	
+	@Override //abstract method
+	public String getOperator() {
 		return ("+");
 	}
 }

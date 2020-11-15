@@ -5,7 +5,7 @@ import java.util.Map;
 public class main {
 
 	public static void main(String[] args) {
-		/*
+		
 		Expression e = new Addition(new Multiplication(
 		        new Variable("a"), new Value(2)),
 		        new Variable("b"));
@@ -21,8 +21,5 @@ public class main {
 		new Addition(new Variable("c"), new Variable("d")))); 
 		System.out.println(sub); // a / (b - (c + d))
 		System.out.println(add); // a / (b + c + d)
-		*/
-		Expression one = new Addition (new Value(1), new Value(2));
-		System.out.println(one);
 	}
 }

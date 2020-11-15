@@ -17,6 +17,7 @@ public abstract class Binary implements Expression{
 	
 	
 	public abstract int calculate(int first, int second); //Overridden by base classes
+	public abstract String getOperator();
 	
 	/*Die Methode evaluate(Map<String,Integer>) 
 	 * vom Typ Expression bezieht sich auf den fehlenden Typ Map*/ //(??)
@@ -41,8 +42,16 @@ public abstract class Binary implements Expression{
 	}
 	
 	@Override
-	public String toString() {
-		return (this.a.toString() + this.b.toString()); // TODO	
+	public String toString(){
+		String output = "";
+		if(this.rank() == 2){
+			output+= "(";	
+		}
+		output+= this.a.toString() + " " + this.getOperator() + " " + this.b.toString();
+		if(this.rank() == 2) {
+			output+= ")";	
+		}
+		return output;
 	}
 		
 	

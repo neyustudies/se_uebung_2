@@ -6,6 +6,7 @@ public class Subtraction extends Binary{
 		super(first, second);
 	}
 
+	@Override //abstract method
 	public int calculate(int first, int second) {
 		return first - second;
 	}
@@ -13,8 +14,9 @@ public class Subtraction extends Binary{
 	public int rank() {
 		return 2;
 	}
-	@Override
-	public String toString () {
+	
+	@Override //abstract method
+	public String getOperator() {
 		return ("-");
 	}
 
