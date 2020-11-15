@@ -1,6 +1,10 @@
 import java.util.Map;
 
 public abstract class Binary implements Expression{ 
+	
+	/* Die Rückgabetypen sind inkompatibel zu den 
+	 * geerbten Methoden Expression.toString(), Object.toString()*/
+	
 	public Expression a; //Interfaces können scheinbar doch Attribute sein??
 	public Expression b;
 
@@ -12,9 +16,10 @@ public abstract class Binary implements Expression{
 	
 	public abstract int calculate(int first, int second); //Overridden by base classes
 	
-	
-	public int evaluate(Map<String, Integer> m) {
-		int first = a.evaluate(m);
+	/*Die Methode evaluate(Map<String,Integer>) 
+	 * vom Typ Expression bezieht sich auf den fehlenden Typ Map*/ //(??)
+	public int evaluate(Map<String, Integer> m) throws Exception {
+		int first = a.evaluate(m); 
 		int second = b.evaluate(m);
 		
 		/*if(this.a instanceof Binary) {
@@ -31,6 +36,11 @@ public abstract class Binary implements Expression{
 		}*/
 		
 		return this.calculate(first, second);
+	}
+	
+	
+	public String toString() {
+		return null; // TODO	
 	}
 		
 	

@@ -16,7 +16,7 @@ public class Value extends Unary {
 		return 0;
 	}
 	
-	public String toString() {
+	public String toString() { // Der Rückgabetyp ist inkompatibel mit Expression.toString()
 		return Integer.toString(v);
 	}
 

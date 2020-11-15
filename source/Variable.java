@@ -5,7 +5,12 @@ public class Variable extends Unary {
 	public String name;
 	
 	
-	public int evaluate(Map<String, Integer> m) {
+	public Variable(String string) {
+		this.name = string;
+	}
+
+
+	public int evaluate(Map<String, Integer> m) throws Exception { //TODO correct exception
 		return m.get(name);
 	}
 	
