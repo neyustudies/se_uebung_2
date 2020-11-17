@@ -42,16 +42,22 @@ public abstract class Binary implements Expression{
 	}
 	
 	@Override
-	public String toString(){
+	public String toString() {
 		String output = "";
-		if(this.rank() == 2){
-			output+= "(";	
-		}
-		output+= this.a.toString() + " " + this.getOperator() + " " + this.b.toString();
-		if(this.rank() == 2) {
-			output+= ")";	
-		}
-		return output;
+        if(a.rank() >= this.rank() && !(this instanceof Associative && a instanceof Associative)) {
+            output += "(" + a.toString() + ")";
+        } else {
+            output += a.toString();
+        }
+        string += " " + this.getOperator() + " ";
+        if(b.rank() >= this.rank() && !(this instanceof Associative && b instanceof Associative)) {
+            output += "(" + b.toString() + ")";
+        } else {
+            output += b.toString();
+        }
+
+        return output;
+		
 	}
 		
 	
