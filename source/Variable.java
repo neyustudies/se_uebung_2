@@ -12,8 +12,19 @@ public class Variable extends Unary {
 	}
 
 
-	public int evaluate(Map<String, Integer> m) throws Exception { //TODO correct exception
-		return m.get(name);
+	public int evaluate(Map<String, Integer> m) throws CalcException  {
+		if(!m.containsKey(name)) {
+			throw new CalcException();
+		}
+		try {
+			return m.get(name);	
+		}
+		catch(CalcException e) {
+			System.out.println("Wert für eine Variable in der übergebenen Variablenbelegung nicht vorhanden.");
+			e.printStackTrace();
+			return 0;
+		}
+			
 	}
 	
 	public int rank() {

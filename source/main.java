@@ -4,7 +4,8 @@ import java.util.Map;
 
 public class main {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args)
+	{
 		
 		Expression e = new Addition(new Multiplication(
 		        new Variable("a"), new Value(2)),

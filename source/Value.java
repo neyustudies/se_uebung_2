@@ -10,7 +10,7 @@ public class Value extends Unary {
 		this.v = val;
 	}
 	
-	public int evaluate(Map<String, Integer> m) { //hier braucht man aber eigentlich dann die map nicht
+	public int evaluate(Map<String, Integer> m) {
 		return v;
 	}
 	
