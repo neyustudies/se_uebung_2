@@ -1,4 +1,4 @@
-package t;
+package calc;
 
 public interface Associative {
 

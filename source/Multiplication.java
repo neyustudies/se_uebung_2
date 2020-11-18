@@ -1,4 +1,4 @@
-package t;
+package calc;
 
 public class Multiplication extends Binary implements Associative {
 

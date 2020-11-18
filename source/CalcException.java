@@ -1,4 +1,4 @@
-package t;
+package calc;
 
 public class CalcException extends RuntimeException{
 	public CalcException() {

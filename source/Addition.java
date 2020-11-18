@@ -1,4 +1,4 @@
-package t;
+package calc;
 
 public class Addition extends Binary implements Associative {
 	
